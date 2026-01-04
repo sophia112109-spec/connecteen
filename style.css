@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fdf7ff url("images/floral-pattern.png") repeat;
+  background-size: 250px;
+  color: #4a3b6a;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #e6d9ff;
+}
+
+.navbar a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #5a3d8a;
+  font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 40px;
+}
+
+.content {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.divider {
+  display: block;
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.96);
+  padding: 28px;
+  border-radius: 28px;
+  box-shadow: 0 12px 30px rgba(155, 123, 255, 0.18);
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: -14px;
+  width: 50px;
+  height: 50px;
+  background: url("images/handdrawn-flower.png") no-repeat center/contain;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 40px;
+  height: 40px;
+  background: url("images/flower-corner.png") no-repeat center/contain;
+}
+
+.auth-box {
+  max-width: 320px;
+  margin: 120px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #9b7bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

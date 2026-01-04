@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Community – ConnecTeen</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">ConnecTeen</h1>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+
+  <main class="content">
+    <img src="images/flower-divider.png" class="divider">
+
+    <div class="card">
+      <h3>Share a Spark</h3>
+      <textarea id="sparkInput" placeholder="Something good that happened today..."></textarea>
+      <button onclick="postSpark()">Post</button>
+    </div>
+
+    <div id="sparkFeed"></div>
+  </main>
+</body>
+</html>
